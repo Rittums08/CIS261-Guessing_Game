@@ -19,6 +19,13 @@ def play_game(limit):
             count += 1
         guess = int(input("Your guess?:  "))
     print(f"Wow, you guessed it and it only took you {count} tries.\n")
+     
+    while(count != number):
+     if count > 3:
+         print("You are no Jedi!")
+     elif count <= 3:
+         print("The force is strong with you!")
+ print(f"well that was interesting....\n")
                          
 def main():
     display_title()
